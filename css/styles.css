@@ -281,8 +281,9 @@ body {
   height: 30px;
 }
 .modal-buttom:hover,
-.modal-buttom:focus .is-hedden {
-  opacity: 0;
+.modal-buttom:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 /* features */
