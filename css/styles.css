@@ -263,7 +263,20 @@ body {
 
   background-color: var(--first-color);
 }
-
+.modal-buttom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+/* 
 .modal-buttom {
   display: block;
   content: '';
@@ -280,11 +293,11 @@ body {
 
   width: 30px;
   height: 30px;
-}
+} */
 .modal-buttom:hover,
 .modal-buttom:focus {
   fill: var(--accent-color);
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 /* features */
