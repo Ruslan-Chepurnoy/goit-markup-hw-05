@@ -241,10 +241,12 @@ body {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .modal {
   position: absolute;
@@ -361,6 +363,9 @@ body {
   padding-bottom: 94px;
 
   background-color: var(--first-color);
+}
+.works-list {
+  z-index: 1;
 }
 .works-titel {
   text-align: center;
