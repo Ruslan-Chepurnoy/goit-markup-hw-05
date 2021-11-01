@@ -116,7 +116,7 @@ body {
 }
 .link.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   content: '';
 
   width: 100%;
@@ -138,17 +138,21 @@ body {
   margin-left: 50px;
 }
 .auth-nav .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--second-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: var(--second-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav .link:hover,
@@ -413,6 +417,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.03em;
 
   color: var(--first-color);
 }
@@ -434,11 +439,12 @@ body {
   text-align: center;
   margin-bottom: 50px;
 
-  color: var(--primary-color);
   font-family: Roboto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+
+  color: var(--primary-color);
 }
 .list .team-bord + .team-bord {
   margin-left: 30px;
@@ -639,6 +645,20 @@ body {
   padding: 0px;
   /* outline: 1px solid red; */
 }
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
 .footer-social-titel {
   margin-bottom: 20px;
   font-weight: 500;
@@ -731,7 +751,7 @@ body {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  /* translateY 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   background: rgba(33, 150, 243, 0.9);
 }
 .example:hover .overlay,
@@ -740,6 +760,11 @@ body {
   visibility: visible;
   pointer-events: auto;
 }
+/* .example {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
 .text-overlay {
   padding: 63px 24px;
   font-family: Roboto;
