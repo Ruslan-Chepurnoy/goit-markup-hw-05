@@ -752,7 +752,7 @@ body {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* translateY 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
   background: rgba(33, 150, 243, 0.9);
 }
 .link-example:hover .overlay,
@@ -761,10 +761,6 @@ body {
   visibility: visible;
   pointer-events: auto;
 }
-/* .example {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 .text-overlay {
   padding: 63px 24px;
